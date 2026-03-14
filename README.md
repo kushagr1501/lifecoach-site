@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# Clinical Authority — Digital Advisory Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*(Almost) the only place to drop the weight.*
 
-Currently, two official plugins are available:
+This is the digital storefront for a premium, high-stakes founders advisory. Built not just to inform, but to immediately establish dominance, psychological resonance, and **clinical authority** in its niche. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Forget generic funnels and "life-hacks." This platform re-engineers the digital presence of Tomas Svitorka, combining behavioral science storytelling with the aesthetic endurance required for an elite clientele.
 
-## React Compiler
+## The Vibe & Philosophy
+- **Awwwards-Level Typography**: Unapologetically massive. We use structural text not just as copy, but as the architecture of the page itself.
+- **Pure & Surgical**: A warm ivory foundation (`#FDFBFA`) slashed with un-ignorable high-visibility orange (`#FF5C00`). No slop, no visual noise.
+- **Kinetic Pacing**: Smooth, delayed `framer-motion` reveals that read like a slow, deliberate scan.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack & Architecture
+- **Framework**: React 19 + Vite (TypeScript)
+- **Styling**: Tailwind CSS v4 (Pure utility, strict thematic control)
+- **Motion**: Framer Motion (Scroll-locked staggers, asymmetric reveals)
+- **Icons**: Lucide React
 
-## Expanding the ESLint configuration
+## Local Development
+If you want to spin up the local environment and inspect the neuro-architecture yourself:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Install dependencies
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Boot the local server
+npm run dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Audit the build
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Structure
+- `src/components/HeroSection.tsx`: The manifesto. Introduces the founder's plateau naturally.
+- `src/components/ProblemSection.tsx`: The Friction Audit. 3-stage breakdown of cognitive leaks.
+- `src/components/AuthoritySection.tsx`: The structural proof. Metrics and clinical pedigree.
+- `src/components/ProgramSection.tsx`: The 90-Day Intervention bootcamp specifics.
+- `src/components/CTASection.tsx`: The final closure step for intake.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Built for speed, psychological impact, and visual supremacy.*
